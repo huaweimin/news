@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view
+    scroll-y 
+    bindscrolltolower="lower"
+    class="news-list">
+    <view class="news-item" wx:for="{{newsData}}" wx:key="{{index}}" bindtap="onNewTap" data-idx="{{item.id}}">
+      <view class="news-img" wx:if="{{!!item.pic_img}}">
+        <image src="{{item.pic_img}}" mode="widthFix"></image>
+      </view>
+      <view class="news-title">
+        {{item.title}}
+      </view>
+    </view> 
+    <view class="loadover-text {{loadover ? 'show' : 'hidden'}}"><text>~到底了</text>  </view>
+  </scroll-view>  
+</view>

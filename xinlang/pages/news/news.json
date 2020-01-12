@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "新浪新闻",
+  "backgroundColor": "#f8f8f8",
+  "backgroundTextStyle": "light",
+  "onReachBottomDistance": 200
+}

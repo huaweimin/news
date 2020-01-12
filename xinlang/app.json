@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fd3511",
+    "navigationBarTitleText": "新浪新闻",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f8f8f8",
+    "backgroundTextStyle": "light"
+  },
+  "sitemapLocation": "sitemap.json"
+}

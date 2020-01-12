@@ -1,0 +1,23 @@
+<!--pages/news.wxml-->
+<import src="../../utils/wxParse/wxParse.wxml" />
+<view class="container">
+  <view class="article">
+    <view class="article-header">
+      {{news.title}}
+    </view>
+    <view class="info">
+      <text class="author">{{news.author}}</text>
+      <text class="time">{{news.time}}</text>
+    </view>
+    <view class="content">     
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>    
+  </view>
+  <view class="nav fixed-bottom-nav">
+    <view class="nav-item share-item">
+      <image src="../../images/icon-share.png" mode="widthFix"></image>
+      <text>转发给好友</text>
+      <button open-type='share'></button>
+    </view>    
+  </view>
+</view>

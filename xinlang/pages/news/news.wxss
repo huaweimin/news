@@ -1,0 +1,68 @@
+/* pages/news.wxss */
+@import "../../utils/wxParse/wxParse.wxss";
+.article{
+  padding:20rpx;
+}
+.article-header{
+  font-size:40rpx;
+  line-height:50rpx;
+}
+.info{
+  overflow: hidden;
+  font-size:30rpx;
+  color:#727272;
+  padding:20rpx 0;
+  border-bottom:1rpx solid #ccc;
+}
+.info .author{
+  float:left;
+}
+.info .time{
+  float:right;
+}
+.content{
+  margin:20rpx 0 90rpx;
+  line-height:50rpx;
+  font-size:14px;
+  overflow: hidden;
+  color:#727272;
+}
+.content image{
+  width:100%;
+}
+.fixed-bottom-nav{
+  position:fixed;
+  width:100%;
+  bottom:0;
+  height:40px;  
+  padding:10rpx 0;
+  font-size:16px;
+  display:flex;
+  background:#f8f8f8;
+  border-top:1rpx solid #ccc;
+}
+.fixed-bottom-nav .nav-item{
+  flex:1;
+  text-align:center;
+  padding-top:8rpx;
+  position:relative;
+}
+.fixed-bottom-nav .nav-item image{
+  width:60rpx;
+  vertical-align: middle;
+}
+.fixed-bottom-nav .nav-item text{
+  font-size:16px;
+  vertical-align: middle;
+}
+.fixed-bottom-nav .share-item button{
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  z-index: 99;
+}
+.wxParse-p{
+  margin:20rpx 0;
+}
